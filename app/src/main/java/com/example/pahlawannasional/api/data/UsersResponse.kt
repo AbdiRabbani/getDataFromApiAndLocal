@@ -2,6 +2,12 @@ package com.example.pahlawannasional.api.data
 
 import com.google.gson.annotations.SerializedName
 
+data class UsersResponse(
+	//encapsulation
+	@field:SerializedName("items")
+	val item: List<UsersResponseItem>? = null
+)
+
 data class UsersResponseItem(
 
 	@field:SerializedName("gists_url")
