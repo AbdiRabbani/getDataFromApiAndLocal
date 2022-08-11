@@ -1,8 +1,6 @@
-package com.example.pahlawannasional.api.ui.search
+package com.example.pahlawannasional.api.ui.searchUser
 
-import android.content.Context
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

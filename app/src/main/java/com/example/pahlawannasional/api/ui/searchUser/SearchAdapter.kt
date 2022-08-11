@@ -1,11 +1,9 @@
-package com.example.pahlawannasional.api.ui.search
+package com.example.pahlawannasional.api.ui.searchUser
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.pahlawannasional.api.data.UsersResponse
 import com.example.pahlawannasional.api.data.UsersResponseItem
-import com.example.pahlawannasional.databinding.ActivitySearchUserBinding
 import com.example.pahlawannasional.databinding.GridItemBinding
 import com.squareup.picasso.Picasso
 

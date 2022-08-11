@@ -1,14 +1,11 @@
-package com.example.pahlawannasional.api.ui.search
+package com.example.pahlawannasional.api.ui.searchUser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pahlawannasional.api.data.UsersResponse
-import com.example.pahlawannasional.api.data.UsersResponseItem
-import com.example.pahlawannasional.api.ui.listusers.ListUserAdapter
 import com.example.pahlawannasional.databinding.ActivitySearchUserBinding
 
 class SearchUserActivity : AppCompatActivity() {

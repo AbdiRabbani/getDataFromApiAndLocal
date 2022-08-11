@@ -7,8 +7,8 @@ import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pahlawannasional.api.data.UsersResponseItem
-import com.example.pahlawannasional.api.ui.search.SearchRepoActivity
-import com.example.pahlawannasional.api.ui.search.SearchUserActivity
+import com.example.pahlawannasional.api.ui.searchrepo.SearchRepoActivity
+import com.example.pahlawannasional.api.ui.searchUser.SearchUserActivity
 import com.example.pahlawannasional.databinding.ActivityListUserBinding
 
 class ListUserActivity : AppCompatActivity() {

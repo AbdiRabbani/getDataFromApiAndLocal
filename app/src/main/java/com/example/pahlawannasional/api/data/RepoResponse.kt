@@ -5,7 +5,7 @@ import retrofit2.http.Field
 
 data class RepoResponse(
     @field:SerializedName("items")
-    val repoResponseItem: List<RepoResponseItem>? = null
+    val item: List<RepoResponseItem>? = null
 )
 
 data class RepoResponseItem(
@@ -18,6 +18,17 @@ data class RepoResponseItem(
     @field:SerializedName("descripton")
     val description : String? = null,
 
-    @field:SerializedName("topics")
-    val topics : List<String>
+    @field:SerializedName("owner")
+    val owner : OwnerResponseItem? = null,
+
+    @field:SerializedName("visibility")
+    val visibility : String? = null
+)
+
+data class OwnerResponseItem(
+    @field:SerializedName("avatar_url")
+    val avatarUrl : String? = null,
+
+    @field:SerializedName("login")
+    val login : String? = null
 )
