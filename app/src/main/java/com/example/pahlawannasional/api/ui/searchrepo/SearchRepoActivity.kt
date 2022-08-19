@@ -3,6 +3,7 @@ package com.example.pahlawannasional.api.ui.searchrepo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pahlawannasional.R
@@ -24,13 +25,18 @@ class SearchRepoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val viewModel = ViewModelProvider(this).get(SearchRepoViewModel::class.java)
-
+        
         binding.btnSearch.setOnClickListener {
-            viewModel.searchRepo(binding.textInputSearch.text.toString())
+            val query = binding.textInputSearch.text.toString()
+            viewModel.searchRepo(query)
             viewModel.apply {
                 getSerchRepo()
                 listRepo.observe(this@SearchRepoActivity) {
-                    showData(it)
+                    if (it == null){
+                        Toast.makeText(applicationContext, "there is no repo with name $query", Toast.LENGTH_SHORT).show()
+                    } else {
+                        showData(it)
+                    }
                 }
             }
         }

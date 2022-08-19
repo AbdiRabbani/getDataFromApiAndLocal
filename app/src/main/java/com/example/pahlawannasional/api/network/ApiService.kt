@@ -13,8 +13,8 @@ interface ApiService {
     fun getListUsers(): Call<List<UsersResponseItem>>
 
     @GET("search/users")
-    fun getSearchUsers( @Query("q") UserName: String ): Call<UsersResponse>
+    fun getSearchUsers( @Query("q") UserName: String?): Call<UsersResponse>
 
     @GET("search/repositories")
-    fun getSearchRepo( @Query("q") RepoName: String) : Call<RepoResponse>
+    fun getSearchRepo( @Query("q") RepoName: String?) : Call<RepoResponse>
 }
